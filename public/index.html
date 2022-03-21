@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>俄罗斯方块</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    #root {
+      top: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #content {
+      background-color: black;
+    }
+
+    #content,
+    #next {
+      display: inline-block;
+      position: relative;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fenshu {
+      color: red;
+      font-size: 30px;
+      margin: 70px 0;
+      display: inline-block;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div id="content">
+    </div>
+    <div class="right">
+      <div id="next"></div>
+      <span class="fenshu">0</span>
+      <div class="options">
+        <span>使用键盘操作游戏</span>
+        <span>↑：旋转方块</span>
+        <span>↓：直接落下</span>
+        <span>←：向左移动</span>
+        <span>→：向右移动</span>
+        <span>空格：暂停/开始/恢复</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

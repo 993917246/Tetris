@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ES2016", "DOM"],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "strictPropertyInitialization": true, 
+    // "isolatedModules": true // 强制约束每个文件都是一个模块
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
